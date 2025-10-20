@@ -1,0 +1,849 @@
+/*
+	Theme: OPAL;
+	Author: Michael Chan;
+	Date of Creation: Mon, August 4, 2025;
+	Colors: Flat UI, Swedish Palette;
+*/
+
+/* all pages */
+	*
+	{
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+/* all pages end */
+
+/* header */
+	.header
+	{
+		background-color: white;
+		color: #3c40c6;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		position: fixed;
+		z-index: 3;
+		width: 100%;
+	}
+
+	header
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	header a .logo
+	{
+		height: 70px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	header a .logo img
+	{
+		height: 60px;
+	}
+
+	header a .logo span
+	{
+		font-size: 2rem;
+		font-weight: 600;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	header a .logo span:hover
+	{
+		border-bottom: 5px solid #3c40c6;
+	}
+
+	header nav
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	header nav a
+	{
+		font-size: 1.2rem;
+		margin-right: 50px;
+		font-weight: 600;
+	}
+
+	header nav a:hover
+	{
+		border-bottom: 3px solid #3c40c6;
+	}
+
+	header nav a.active
+	{
+		border-bottom: 3px solid #3c40c6;
+	}
+
+	.checkbtn
+	{
+		color: #3c40c6;
+		cursor: pointer;
+		display: none;
+	}
+
+	.checkbtn i
+	{
+		font-size: 30px;
+	}
+
+	#check
+	{
+		display: none;
+	}
+/* header ends */
+
+/* banner */
+	.banner
+	{
+		background-color: #3c40c6;
+		color: white;
+		min-height: 50vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 100%;
+	}
+
+	.banner .container h1
+	{
+		font-size: 3rem;
+		font-weight: 600;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+		margin-bottom: 30px;
+	}
+/* banner ends */
+
+/* semi banner */
+	.semi-banner
+	{
+		padding: 50px 0;
+		background-color: #1e272e;
+		color: white;
+	}
+
+	.section-title
+	{
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.semi-banner .container p,
+	.entrepreneur-coaching .container p,
+	.individual-coaching .container p,
+	.entrepreneur-training .container p,
+	.about .container p,
+	.coaching .container p,
+	.entrepreneur-coaching-2 .container p,
+	.strategic-planning .container p,
+	.operational-efficiency .container p,
+	.training .container p
+	{
+		max-width: 1000px;
+		margin: 10px auto;
+		text-align: left;
+		line-height: 1.6;
+	}
+
+	.semi-banner .container ul
+	{
+		text-align: left;
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	.semi-banner .container ul li span
+	{
+		font-weight: 600;
+	}
+/* semi banner ends */
+
+/* entrepreneur coaching */
+	.entrepreneur-coaching
+	{
+		padding: 50px 0;
+		background-color: white;
+		color: #1e272e;
+	}
+
+	.section-sub-title
+	{
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 300;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.entrepreneur-coaching-btn
+	{
+		cursor: pointer;
+		text-decoration: none;
+		padding: 5px 10px;
+		background-color: #1e272e;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+
+		display: block;          /* makes centering possible */
+		width: fit-content;      /* keeps button size tight to text */
+		margin: 20px auto 0;     /* centers horizontally */
+		text-align: center;      /* keeps text centered within */
+		transition: all 0.3s ease; /* smooth hover transition */
+	}
+
+	.entrepreneur-coaching-btn:hover
+	{
+		font-weight: 600;
+	}
+/* entrepreneur coaching ends */
+
+/* individual coaching */
+	.individual-coaching
+	{
+		padding: 50px 0;
+		background-color: #1e272e;
+		color: white;
+	}
+
+	.individual-coaching-btn
+	{
+		cursor: pointer;
+		text-decoration: none;
+		padding: 5px 10px;
+		background-color: white;
+		color: #1e272e;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+
+		display: block;          /* makes centering possible */
+		width: fit-content;      /* keeps button size tight to text */
+		margin: 20px auto 0;     /* centers horizontally */
+		text-align: center;      /* keeps text centered within */
+		transition: all 0.3s ease; /* smooth hover transition */
+	}
+
+	.individual-coaching-btn:hover
+	{
+		font-weight: 600;
+	}
+/* individual coaching ends */
+
+/* entrepreneur training */
+	.entrepreneur-training
+	{
+		padding: 50px 0;
+		background-color: #3c40c6;
+		color: white;
+	}
+
+	.entrepreneur-training-btn
+	{
+		cursor: pointer;
+		text-decoration: none;
+		padding: 5px 10px;
+		background-color: white;
+		color: #3c40c6;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+
+		display: block;          /* makes centering possible */
+		width: fit-content;      /* keeps button size tight to text */
+		margin: 20px auto 0;     /* centers horizontally */
+		text-align: center;      /* keeps text centered within */
+		transition: all 0.3s ease; /* smooth hover transition */
+	}
+
+	.entrepreneur-training-btn:hover
+	{
+		font-weight: 600;
+	}
+/* entrepreneur training ends */
+
+/* footer */
+	.footer
+	{
+		padding: 50px 0;
+		background-color: #1e272e;
+		color: white;
+	}
+
+	.footer-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.footer-box
+	{
+		width: 100%;
+	}
+
+	.footer-box p
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.footer-title
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.footer-box .socials
+	{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.footer-box .socials a
+	{
+		text-decoration: none;
+	}
+
+	.footer-box .socials a img
+	{
+		height: 30px;
+		width: 30px;
+		object-fit: cover;
+	}
+
+	.footer-box span
+	{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.footer-box span img
+	{
+		height: 30px;
+		width: 30px;
+		object-fit: cover;
+	}
+
+	footer p
+	{
+		text-align: center;
+	}
+
+	.go-up
+	{
+		position: fixed;
+		right: 0;
+		top: 84%;
+		margin-right: 28px;
+		z-index: 3;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		object-fit: cover;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		cursor: pointer;
+
+		/* hidden by default */
+		display: none;
+	}
+/* footer ends */
+
+/* floating WhatsApp */
+	.whatsapp_float
+	{
+	    position: fixed;
+	    width: 50px;
+	    height: 50px;
+	    bottom: 20px;
+	    right: 20px;
+	    background-color: #25D366;
+	    border-radius: 50%;
+	    text-align: center;
+	    z-index: 100;
+	}
+
+	.whatsapp_icon
+	{
+	    width: 30px;
+	    height: 30px;
+	    margin-top: 10px;
+	}
+/* floating WhatsApp ends */
+
+/* about page */
+	.about
+	{
+		padding: 100px 0 50px;
+		color: #1e272e;
+	}
+
+	.page-title
+	{
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: 600;
+		border-bottom: 5px solid #3c40c6;
+		width: fit-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.page-sub-title
+	{
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+/* about page ends */
+
+/* coaching page */
+	.coaching
+	{
+		padding: 100px 0 10px;
+		color: #1e272e;
+	}
+
+	.entrepreneur-coaching-2
+	{
+		padding: 50px 0;
+		background-color: #d2dae2;
+		color: #1e272e;
+	}
+
+	.coaching-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.coaching-box
+	{
+		width: 100%;
+		padding: 20px 20px;
+		border: 2px solid #3c40c6;
+		border-radius: 13px;
+	}
+
+	.coaching-box-title
+	{
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-left: 30px;
+	}
+
+	.coaching-box ul li span
+	{
+		font-weight: 600;
+	}
+
+	.coaching-box-btn
+	{
+		text-decoration: none;
+		color: white;
+		background-color: #3c40c6;
+		padding: 5px 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+	}
+
+	.coaching-box-btn:hover
+	{
+		font-weight: 600;
+	}
+
+	.strategic-planning
+	{
+		padding: 50px 0;
+		background-color: #3c40c6;
+		color: white;
+	}
+
+	.coaching-box.sp
+	{
+		border: 2px solid white;
+	}
+
+	.coaching-box-btn.sp
+	{
+		text-decoration: none;
+		color: #3c40c6;
+		background-color: white;
+		padding: 5px 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+	}
+
+	.coaching-box-btn.sp:hover
+	{
+		font-weight: 600;
+	}
+
+	.operational-efficiency
+	{
+		padding: 50px 0;
+		color: #1e272e;
+	}
+/* coaching page ends */
+
+/* training page */
+	.training
+	{
+		padding: 100px 0 50px;
+		color: #1e272e;
+	}
+
+	.training-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.training-box
+	{
+		width: 100%;
+		padding: 20px 20px;
+		border: 2px solid #3c40c6;
+		border-radius: 13px;
+	}
+
+	.training-box-title
+	{
+		font-size: 1.2rem;
+		font-weight: 600;
+		margin-left: 30px;
+	}
+
+	.training-box ul li span
+	{
+		font-weight: 600;
+	}
+
+	.training-box-btn
+	{
+		text-decoration: none;
+		color: white;
+		background-color: #3c40c6;
+		padding: 5px 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+	}
+
+	.training-box-btn:hover
+	{
+		font-weight: 600;
+	}
+/* training page ends */
+
+/* contact page */
+	.contact
+	{
+		padding: 100px 0 20px;
+		color: #1e272e;
+		min-height: 70vh;
+	}
+
+	.form-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+
+	.form-box
+	{
+		width: 100%;
+		padding: 20px 20px;
+	}
+
+	.form-responsive
+	{
+		padding: 10px 15px;
+		border: 2px solid #3c40c6;
+		border-radius: 13px;
+		width: 100%;
+		margin-top: 5px;
+		font-size: 1.2rem;
+	}
+
+	.form-responsive:focus
+	{
+    	border-color: #86b7fe;
+    	outline: 0;
+    	box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+	}
+
+	.form-box .ta
+	{
+		border: 2px solid #3c40c6;
+		border-radius: 13px;
+		margin-top: 5px;
+		width: 100%;
+		padding: 10px 15px;
+		font-size: 1.2rem;
+	}
+
+	.form-box .ta:focus
+	{
+    	border-color: #86b7fe;
+    	outline: 0;
+    	box-shadow: 0 0 0 .25rem rgba(13,110,253,.25);
+	}
+
+	.contact-btn
+	{
+		text-decoration: none;
+		color: white;
+		background-color: #3c40c6;
+		padding: 5px 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+	}
+
+	.contact-btn:hover
+	{
+		font-weight: 600;
+	}
+/* contact page ends */
+
+/* page responsiveness */
+	@media(max-width: 768px)
+	{
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+			}
+
+			header nav
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				width: 20%;
+				height: 40vh;
+				display: flex;
+				flex-direction: column;
+				background-color: white;
+				color: #3c40c6;
+				justify-content: center;
+				align-items: flex-end;
+				padding-right: 30px;
+			}
+
+			header nav a
+			{
+				margin: 10px 0;
+			}
+
+			#check:checked ~ nav
+			{
+				right: 0;
+			}	
+		/* header ends */
+
+		/* banner */
+			.banner .container h1
+			{
+				font-size: 1.7rem;
+				margin-bottom: 20px;
+			}
+		/* banner ends */
+
+		/* semi banner */
+			.section-title
+			{
+				font-size: 1.5rem;
+			}
+
+			.section-sub-title
+			{
+				font-size: 1.2rem;
+			}
+		/* semi banner ends */
+
+		/* footer */
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			.go-up
+			{
+				top: 80%;
+			}
+		/* footer ends */
+
+		/* contact page */
+			.form-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* contact page ends */
+	}
+
+	@media(max-width: 425px)
+	{
+		/* header */
+			.checkbtn i
+			{
+				font-size: 25px;
+				margin-right: 10px;
+			}
+
+			header a .logo
+			{
+				height: 60px;
+			}
+
+			header a .logo img
+			{
+				height: 50px;
+			}
+
+			header a .logo span
+			{
+				font-size: 1.5rem;
+			}
+
+			header nav
+			{
+				width: 30%;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner .container h1
+			{
+				font-size: 1.5rem;
+			}
+		/* banner ends */
+
+		/* semi banner */
+			.semi-banner
+			{
+				padding: 20px 0;
+			}
+		/* semi banner ends */
+
+		/* entrepreneur coaching */
+			.entrepreneur-coaching
+			{
+				padding: 20px 0;
+			}
+		/* entrepreneur coaching ends */
+
+		/* individual coaching */
+			.individual-coaching
+			{
+				padding: 20px 0;
+			}
+		/* individual coaching ends */
+
+		/* entrepreneur training */
+			.entrepreneur-training
+			{
+				padding: 20px 0;
+			}
+		/* entrepreneur training ends */
+
+		/* footer */
+			.footer
+			{
+				padding: 20px 0;
+			}
+		/* footer ends */
+
+		/* about page */
+			.about
+			{
+				padding: 80px 0 20px;
+			}
+		/* about page ends */
+
+		/* coaching page */
+			.coaching
+			{
+				padding: 80px 0 10px;
+			}
+
+			.entrepreneur-coaching-2
+			{
+				padding: 20px 0;
+			}
+
+			.coaching-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+
+			.strategic-planning
+			{
+				padding: 20px 0;
+			}
+
+			.operational-efficiency
+			{
+				padding: 20px 0;
+			}
+		/* coaching page ends */
+
+		/* training page */
+			.training
+			{
+				padding: 80px 0 20px;
+			}
+
+			.training-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* training page ends */
+
+		/* contact page */
+			.contact
+			{
+				padding: 80px 0 20px;
+			}
+
+			.form-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 10px;
+			}
+		/* contact page ends */
+	}
+/* page responsiveness ends */
